@@ -5,7 +5,7 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 
 export default function TopBar() {
     return (
-        <div className="flex justify-between items-center p-4 h-[50px] w-[100%] bg-yellow-500 sticky top-0">
+        <div className="flex justify-between items-center p-4 h-[50px] w-[100%] bg-yellow-500 sticky top-0 z-[999]">
 
             <div id="TopBarLeft" className='flex-[3] '>
                 <span className="text-2xl ml-[20px] font-bold text-white cursor-pointer">YoYoSocial</span>

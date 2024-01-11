@@ -5,6 +5,9 @@ import GroupsIcon from '@mui/icons-material/Groups';
 import BookmarkAddedIcon from '@mui/icons-material/BookmarkAdded';
 import LiveHelpIcon from '@mui/icons-material/LiveHelp';
 
+import FriendRequest from './FriendRequest';
+import { Users } from '../data';
+
 
 export default function SideBar() {
     return (
@@ -43,50 +46,9 @@ export default function SideBar() {
                 <hr className='my-[20px]' />
 
                 <ul className='friendList flex flex-col gap-5'>
-                    <li className='flex items-center gap-5'>
-                        <img src="src\assets\person\2.jpeg" alt="" className='w-[40px] h-[40px] object-cover rounded-full' />
-                        <span>Jone Doe</span>
-                    </li>
-                    <li className='flex items-center gap-5'>
-                        <img src="src\assets\person\2.jpeg" alt="" className='w-[40px] h-[40px] object-cover rounded-full' />
-                        <span>Jone Doe</span>
-                    </li>
-                    <li className='flex items-center gap-5'>
-                        <img src="src\assets\person\2.jpeg" alt="" className='w-[40px] h-[40px] object-cover rounded-full' />
-                        <span>Jone Doe</span>
-                    </li>
-                    <li className='flex items-center gap-5'>
-                        <img src="src\assets\person\2.jpeg" alt="" className='w-[40px] h-[40px] object-cover rounded-full' />
-                        <span>Jone Doe</span>
-                    </li>
-                    <li className='flex items-center gap-5'>
-                        <img src="src\assets\person\2.jpeg" alt="" className='w-[40px] h-[40px] object-cover rounded-full' />
-                        <span>Jone Doe</span>
-                    </li>
-                    <li className='flex items-center gap-5'>
-                        <img src="src\assets\person\2.jpeg" alt="" className='w-[40px] h-[40px] object-cover rounded-full' />
-                        <span>Jone Doe</span>
-                    </li>
-                    <li className='flex items-center gap-5'>
-                        <img src="src\assets\person\2.jpeg" alt="" className='w-[40px] h-[40px] object-cover rounded-full' />
-                        <span>Jone Doe</span>
-                    </li>
-                    <li className='flex items-center gap-5'>
-                        <img src="src\assets\person\2.jpeg" alt="" className='w-[40px] h-[40px] object-cover rounded-full' />
-                        <span>Jone Doe</span>
-                    </li>
-                    <li className='flex items-center gap-5'>
-                        <img src="src\assets\person\2.jpeg" alt="" className='w-[40px] h-[40px] object-cover rounded-full' />
-                        <span>Jone Doe</span>
-                    </li>
-                    <li className='flex items-center gap-5'>
-                        <img src="src\assets\person\2.jpeg" alt="" className='w-[40px] h-[40px] object-cover rounded-full' />
-                        <span>Jone Doe</span>
-                    </li>
-                    <li className='flex items-center gap-5'>
-                        <img src="src\assets\person\2.jpeg" alt="" className='w-[40px] h-[40px] object-cover rounded-full' />
-                        <span>Jone Doe</span>
-                    </li>
+                    {Users.map((user)=>{
+                        return <FriendRequest key={user.id} User={user}/>
+                    })}
                 </ul>
             </div>
         </div>
