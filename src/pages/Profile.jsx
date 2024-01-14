@@ -20,7 +20,7 @@ export default function Profile() {
                         </div>
                         <div className="profileInfo flex flex-col items-center">
                             <h4 className="profileInfoName text-[24px] font-bold">Sovan Roy</h4>
-                            <span className="profileInfoDesc font-[300]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, non.</span>
+                            <span className="profileInfoDesc font-[300]">Hello Friends</span>
                         </div>
                     </div>
 
